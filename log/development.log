@@ -414,3 +414,11 @@ Processing by StaticController#index as HTML
 Completed 200 OK in 1578ms (Views: 1494.5ms | ActiveRecord: 0.0ms | Allocations: 57563)
 
 
+Started GET "/api/greetings" for 127.0.0.1 at 2022-05-12 13:03:20 +0200
+Processing by Api::GreetingsController#index as HTML
+  Parameters: {"default"=>{"format"=>:json}}
+  [1m[36mGreeting Load (3.3ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/greetings_controller.rb:3:in `index'
+Completed 200 OK in 232ms (Views: 1.1ms | ActiveRecord: 61.6ms | Allocations: 8527)
+
+
