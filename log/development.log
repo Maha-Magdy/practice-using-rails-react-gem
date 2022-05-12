@@ -66,3 +66,7 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 83ms (Views: 28.9ms | ActiveRecord: 0.0ms | Allocations: 6735)
 
 
+Started GET "/ws" for ::1 at 2022-05-12 10:40:58 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
