@@ -1,4 +1,6 @@
- require 'test_helper'
+ # frozen_string_literal: false
+
+require 'test_helper'
 
 module Api
   class GreetingsControllerTest < ActionDispatch::IntegrationTest
