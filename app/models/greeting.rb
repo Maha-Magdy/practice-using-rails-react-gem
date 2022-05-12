@@ -1,4 +1,4 @@
-# 
+ 
 
 class Greeting < ApplicationRecord
 end
