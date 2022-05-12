@@ -1,6 +1,6 @@
 # PRACTICE USING RAILS-REACT GEM
 
-This application is made for allowing me to practice using react-rails gem that allow to build rails application mainly for handling the backend while depend on React to handle the frontend side.
+This application is made for allowing me to practice using the react-rails gem that allows building rails application mainly for handling the backend while depending on React to handle the frontend side.
 
 ## Built With
 
