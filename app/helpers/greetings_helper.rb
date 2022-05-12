@@ -1,4 +1,2 @@
- 
-
 module GreetingsHelper
 end
