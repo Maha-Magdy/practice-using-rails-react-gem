@@ -346,3 +346,61 @@ puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
 puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
 puma (5.6.4) lib/puma/server.rb:441:in `process_client'
 puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-05-12 12:47:56 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (5.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GreetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering greetings/index.html.erb within layouts/application
+  Rendered greetings/index.html.erb within layouts/application (Duration: 12.0ms | Allocations: 645)
+  Rendered layout layouts/application.html.erb (Duration: 1193.9ms | Allocations: 43937)
+Completed 200 OK in 1350ms (Views: 1221.2ms | ActiveRecord: 0.0ms | Allocations: 49767)
+
+
+Started GET "/api/greetings" for 127.0.0.1 at 2022-05-12 12:48:11 +0200
+Processing by Api::GreetingsController#index as HTML
+  Parameters: {"default"=>{"format"=>:json}}
+  [1m[36mGreeting Load (3.6ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/greetings_controller.rb:3:in `index'
+Completed 200 OK in 64ms (Views: 1.1ms | ActiveRecord: 17.7ms | Allocations: 6172)
+
+
+Started GET "/api/greetings" for 127.0.0.1 at 2022-05-12 12:48:14 +0200
+Processing by Api::GreetingsController#index as HTML
+  Parameters: {"default"=>{"format"=>:json}}
+  [1m[36mGreeting Load (1.2ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/greetings_controller.rb:3:in `index'
+Completed 200 OK in 23ms (Views: 1.0ms | ActiveRecord: 1.2ms | Allocations: 873)
+
+
+Started GET "/api/greetings" for 127.0.0.1 at 2022-05-12 12:48:17 +0200
+Processing by Api::GreetingsController#index as HTML
+  Parameters: {"default"=>{"format"=>:json}}
+  [1m[36mGreeting Load (1.2ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/greetings_controller.rb:3:in `index'
+Completed 200 OK in 23ms (Views: 1.2ms | ActiveRecord: 1.2ms | Allocations: 786)
+
+
+Started GET "/api/greetings" for 127.0.0.1 at 2022-05-12 12:48:20 +0200
+Processing by Api::GreetingsController#index as HTML
+  Parameters: {"default"=>{"format"=>:json}}
+  [1m[36mGreeting Load (1.4ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/greetings_controller.rb:3:in `index'
+Completed 200 OK in 25ms (Views: 1.1ms | ActiveRecord: 1.4ms | Allocations: 800)
+
+
+Started GET "/api/greetings" for 127.0.0.1 at 2022-05-12 12:53:29 +0200
+Processing by Api::GreetingsController#index as HTML
+  Parameters: {"default"=>{"format"=>:json}}
+  [1m[36mGreeting Load (1.1ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/api/greetings_controller.rb:3:in `index'
+Completed 200 OK in 39ms (Views: 1.1ms | ActiveRecord: 9.2ms | Allocations: 2904)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-12 12:53:35 +0200
+  
+ActionController::RoutingError (uninitialized constant StaticController):
+  
+Started GET "/" for 127.0.0.1 at 2022-05-12 12:54:51 +0200
+  
+ActionController::RoutingError (uninitialized constant StaticController):
+  
