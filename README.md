@@ -19,11 +19,19 @@ This application is made for allowing me to practice using the react-rails gem t
 
    bundle install
 
-3. migrate the database by this command
+3. create the database by this command
+   
+   rails db:create
+
+4. migrate the database by this command
 
    rails db:migrate
 
-4. Open rails sever by this command, then follow the link provided to open the application on your browser
+5. fill the database with some initial data by this command
+   
+   rails db:seed
+
+6. Open rails sever by this command, then follow the link provided to open the application on your browser
 
    Rails server
 
