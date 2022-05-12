@@ -1,5 +1,3 @@
- # frozen_string_literal: false
-
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -75,3 +73,5 @@ end
 
 gem 'react-rails'
 gem 'webpacker'
+
+gem 'rubocop', '>= 1.0', '< 2.0'
