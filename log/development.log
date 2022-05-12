@@ -464,3 +464,4 @@ Migrating to CreateGreetings (20220512224611)
   [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
   [1m[36mGreeting Create (0.7ms)[0m  [1m[32mINSERT INTO "greetings" ("message", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["message", "It's a pleasure to meet you."], ["created_at", "2022-05-12 22:48:43.853209"], ["updated_at", "2022-05-12 22:48:43.853209"]]
   [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGreeting Load (3.2ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
